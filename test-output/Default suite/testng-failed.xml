@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.employee.BrowserStackSample">
+      <class name="com.employee.CameraAccessTest">
         <methods>
-          <include name="LanchBrowser"/>
+          <include name="empId2"/>
         </methods>
-      </class> <!-- com.employee.BrowserStackSample -->
+      </class> <!-- com.employee.CameraAccessTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 14 17:59:11 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38941 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.employee.CameraAccessTest.empId()'><b>empId</b><br>Test class: com.employee.CameraAccessTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;pass&quot;}
+  (Session info: chrome=108.0.5359.128)
+  (Driver info: chromedriver=108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}),platform=Linux 5.15.17-200.fc35.x86_64 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DCKAQOC-050&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoGrantPermissions: true, browser: chrome_android, browserName: chrome, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, buildName: browserstack-build-1, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoGrantPermissions: true, browser: chrome_android, browserName: chrome, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, buildName: browserstack-build-1, chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate], w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: Samsung Galaxy S23 Ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QK5J, deviceOrientation: portrait, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QK5J, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: {browser: SEVERE}, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orientation: PORTRAIT, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 333b632252b71c329dd8e0a868a..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QK5J, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate], w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: Samsung Galaxy S23 Ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QK5J, deviceOrientation: portrait, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QK5J, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: org.openqa.selenium.logging..., mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orientation: PORTRAIT, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 333b632252b71c329dd8e0a868a..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QK5J, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 333b632252b71c329dd8e0a868acf0660f035ef0
+*** Element info: {Using=xpath, value=pass}
+	at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(Unknown Source)
+	at org.openqa.selenium.By$ByXPath.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at com.employee.CameraAccessTest.empId(CameraAccessTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace962758588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace962758588'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;pass&quot;}
+  (Session info: chrome=108.0.5359.128)
+  (Driver info: chromedriver=108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}),platform=Linux 5.15.17-200.fc35.x86_64 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DCKAQOC-050&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoGrantPermissions: true, browser: chrome_android, browserName: chrome, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, buildName: browserstack-build-1, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoGrantPermissions: true, browser: chrome_android, browserName: chrome, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, buildName: browserstack-build-1, chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate], w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: Samsung Galaxy S23 Ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QK5J, deviceOrientation: portrait, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QK5J, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: {browser: SEVERE}, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orientation: PORTRAIT, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 333b632252b71c329dd8e0a868a..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QK5J, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://185.2..., --disable-features=Translate], w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: Samsung Galaxy S23 Ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW127QK5J, deviceOrientation: portrait, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW127QK5J, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: org.openqa.selenium.logging..., mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orientation: PORTRAIT, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 333b632252b71c329dd8e0a868a..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RZCW127QK5J, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 333b632252b71c329dd8e0a868acf0660f035ef0
+*** Element info: {Using=xpath, value=pass}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(Unknown Source)
+	at org.openqa.selenium.By$ByXPath.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at com.employee.CameraAccessTest.empId(CameraAccessTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>38</td>
+<td>com.employee.CameraAccessTest@7be58f16</td></tr>
+<tr>
+<td title='com.employee.CameraAccessTest.empId2()'><b>empId2</b><br>Test class: com.employee.CameraAccessTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DCKAQOC-050&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoGrantPermissions: true, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.21.0, browserstack.isTargetBased: true, browserstack.is_hub_canary: false, buildName: browserstack-build-1, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoGrantPermissions: true, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.21.0, browserstack.isTargetBased: true, browserstack.is_hub_canary: false, buildName: browserstack-build-1, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: iphone, deviceName: iPhone 14, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 14-16.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 16, os_version: 16.0, platform: MAC, platformName: iOS, projectName: First Java Project, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: f8bcda40ad52cf1a07bad302179..., sessionName: first_test, takesScreenshot: true, udid: 00008110-001208381E85401E, useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: iphone, deviceName: iPhone 14, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 14-16.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 16, os_version: 16.0, platform: MAC, platformName: MAC, projectName: First Java Project, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: f8bcda40ad52cf1a07bad302179..., sessionName: first_test, takesScreenshot: true, udid: 00008110-001208381E85401E, useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: f8bcda40ad52cf1a07bad3021799a759c2ed3ce8
+*** Element info: {Using=xpath, value=pass}
+	at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(Unknown Source)
+	at org.openqa.selenium.By$ByXPath.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at com.employee.CameraAccessTest.empId2(CameraAccessTest.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1111169572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1111169572'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DCKAQOC-050&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoGrantPermissions: true, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.21.0, browserstack.isTargetBased: true, browserstack.is_hub_canary: false, buildName: browserstack-build-1, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoGrantPermissions: true, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browser: iphone, browserName: safari, browserstack.appium_version: 1.21.0, browserstack.isTargetBased: true, browserstack.is_hub_canary: false, buildName: browserstack-build-1, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: iphone, deviceName: iPhone 14, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 14-16.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 16, os_version: 16.0, platform: MAC, platformName: iOS, projectName: First Java Project, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: f8bcda40ad52cf1a07bad302179..., sessionName: first_test, takesScreenshot: true, udid: 00008110-001208381E85401E, useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: iphone, deviceName: iPhone 14, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 14-16.2}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 16, os_version: 16.0, platform: MAC, platformName: MAC, projectName: First Java Project, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: f8bcda40ad52cf1a07bad302179..., sessionName: first_test, takesScreenshot: true, udid: 00008110-001208381E85401E, useXctestrunFile: true, version: , wda_port: 8404, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: f8bcda40ad52cf1a07bad3021799a759c2ed3ce8
+*** Element info: {Using=xpath, value=pass}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(Unknown Source)
+	at org.openqa.selenium.By$ByXPath.findElement(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+	at com.employee.CameraAccessTest.empId2(CameraAccessTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>34</td>
+<td>com.employee.CameraAccessTest@7be58f16</td></tr>
+</table><p>
+</body>
+</html>
